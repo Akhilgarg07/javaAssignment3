@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/register")
 public class Register extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -44,7 +43,7 @@ public class Register extends HttpServlet {
         response.getWriter().print("Registered Successfully");
         response.addCookie(new Cookie("username",username));
         response.addCookie(new Cookie("password",password));
-        response.sendRedirect("login");
+        response.sendRedirect("./login");
 
     }
 

@@ -23,7 +23,7 @@
             <h2>User Register Form</h2>
             <div class="col-md-8 col-md-offset-3">
 
-                <form action="register" method="post">
+                <form action="Register" method="post">
 
                     <div class="form-group">
                         <label for="uname">First Name:</label> <input type="text"
