@@ -1,4 +1,4 @@
-package com.nagarro.entity;
+package main.java.com.nagarro.entity;
 
 import javax.persistence.*;
 

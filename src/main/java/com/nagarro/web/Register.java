@@ -1,8 +1,11 @@
-package com.nagarro.web;
+package main.java.com.nagarro.web;
 import javax.servlet.annotation.WebServlet;
-import com.nagarro.entity.UsersEntity;
-import com.nagarro.util.HibernateUtil;
+
 import org.hibernate.Session;
+
+import main.java.com.nagarro.entity.UsersEntity;
+import main.java.com.nagarro.util.HibernateUtil;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;

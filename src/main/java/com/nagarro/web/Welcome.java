@@ -1,4 +1,4 @@
-package com.nagarro.web;
+package main.java.com.nagarro.web;
 
 import javax.servlet.annotation.WebServlet;
 

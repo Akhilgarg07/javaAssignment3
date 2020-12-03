@@ -1,22 +1,25 @@
-package com.nagarro.web;
+package main.java.com.nagarro.web;
 
-import com.nagarro.entity.UsersEntity;
-import com.nagarro.util.HibernateUtil;
 import javax.servlet.annotation.WebServlet;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import main.java.com.nagarro.entity.UsersEntity;
+import main.java.com.nagarro.util.HibernateUtil;
+
 import javax.servlet.*;
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/login")
-public class Login {
+@WebServlet("/Login")
+public class Login extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         System.out.println("check2");
@@ -44,9 +47,10 @@ public class Login {
 
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.sendRedirect("Welcome");
+        response.sendRedirect("./login.jsp");
     }
 
 }
