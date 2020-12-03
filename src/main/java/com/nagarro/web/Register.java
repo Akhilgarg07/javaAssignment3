@@ -15,6 +15,7 @@ public class Register extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        System.out.println("check1");
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String username = request.getParameter("username");
@@ -40,6 +41,7 @@ public class Register extends HttpServlet {
         response.getWriter().print("Registered Successfully");
         response.addCookie(new Cookie("username",username));
         response.addCookie(new Cookie("password",password));
+        response.sendRedirect("login");
 
     }
 
